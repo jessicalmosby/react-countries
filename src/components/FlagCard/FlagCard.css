@@ -1,5 +1,8 @@
 .flag-card {
-  border: 1em;
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  padding: 0.25em;
+  border: 0.5em;
   border-radius: 1em;
   border-style: solid;
   border-color: black;

@@ -1,0 +1,7 @@
+.flag-card {
+  border: 1em;
+  border-radius: 1em;
+  border-style: solid;
+  border-color: black;
+  width: 200px;
+}

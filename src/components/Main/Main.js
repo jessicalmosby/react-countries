@@ -4,7 +4,7 @@ import FlagCard from '../FlagCard/FlagCard.js';
 import './Main.css';
 
 export default function Main() {
-  const countries = useCountries();
+  const { countries, error } = useCountries();
   const [continent, setContinents] = useState('all');
   const continents = [...new Set(countries.map(({ continent }) => continent))];
 
@@ -25,6 +25,7 @@ export default function Main() {
       {filtered.map((country) => (
         <FlagCard key={country.name} {...country} />
       ))}
+      <p style={{ color: 'red', fontWeight: 'bold' }}>{error}</p>
     </main>
   );
 }
